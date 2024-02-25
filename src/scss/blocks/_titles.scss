@@ -1,0 +1,28 @@
+.title-1 {
+    font-size: clamp(42px, 1.95rem + 3.38vw, 96px);
+    letter-spacing: clamp(4px, 0.087rem + 0.81vw, 17px);
+    line-height: 1;
+    // color: #fff;
+    text-transform: uppercase;
+}
+
+.title-2 {
+    font-size: clamp(2.375rem, 1.65rem + 3.62vw, 96px);
+    letter-spacing: clamp(2px, 0.088rem + 0.19vw, 5px);
+    text-transform: uppercase;
+
+    /* Tablet */
+    @include tablet {
+        line-height: 1;
+    }
+
+    &--big {
+        font-size: clamp(56px, 3rem + 2.5vw, 96px);
+    }
+}
+
+.title-3 {
+    font-size: clamp(36px, 2rem + 1.25vw, 56px);
+    letter-spacing: clamp(2px, 0.05rem + 0.38vw, 8px);
+    text-transform: uppercase;
+}

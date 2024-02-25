@@ -1,0 +1,27 @@
+
+:root {
+	--container-width: 100%;
+	// --container-width: 1550px;
+	--container-padding: clamp(15px, -1.313rem + 11.25vw, 195px);
+
+	--font-family: "Druk Cyr", sans-serif;
+	--second-family: "IBM Plex Sans", sans-serif;
+	--third-family: "Bebas Neue", sans-serif;
+
+	--page-bg: #fff;
+	--text-color: #000;
+	--ui-red: #E0013F;
+	--ui-blue: #0069E4;
+	--white: #fff;
+
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}
+
+$laptop-size: 1199px;
+$tablet-size: 991px;
+$mobile-size: 767px;
+$mobile-xs-size: 575px;

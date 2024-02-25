@@ -1,0 +1,20 @@
+header.header 
+    include ./../../blocks/nav.pug
+    .header__row 
+        .header__row-link 
+            button.reserve-btn.header__row-btn.header__row-btn--desktop Забронировать лед
+            button.reserve-btn.header__row-btn.header__row-btn--mobile Бронь льда
+        .header__nav
+            button.mobile-nav-btn 
+                .nav-icon
+        .header__row-link.header__row-phone 
+            a(href="tel:74956020232") 8 495 602 02 32
+    .header__content 
+        .header__logo 
+            img(src="./img/logo.svg", alt="Ледовый комплекс ЛУЧ").logo
+        .header__title 
+            span новый
+            h1.title-1 Ледовый комплекс  
+            span в москве
+        .header__address 
+            p Москва,#[br]Волоколамское шоссе, д.88

@@ -1,0 +1,9 @@
+mixin about-card(title, img )    
+    .about-card
+        .about-card__img 
+            img(src="./img/about/" + img, alt=title)
+        .about-card__desc 
+            .about-card__title 
+                h2.title-2 #{title} 
+            .about-card__text 
+                block

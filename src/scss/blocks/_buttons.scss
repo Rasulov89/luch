@@ -1,0 +1,20 @@
+.btn, a.btn {
+    padding: clamp(13px, 0.75rem + 0.31vw, 18px) clamp(17px, 0.9rem + 0.81vw, 30px);
+    background-color: var(--ui-red);
+
+    font-family: var(--third-family);
+    font-size: clamp(16px, 0.925rem + 0.38vw, 22px);
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: clamp(3px, 0.163rem + 0.13vw, 5px);
+
+    transition: all .2s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &--blue {
+        background-color: var(--ui-blue);
+    }
+}

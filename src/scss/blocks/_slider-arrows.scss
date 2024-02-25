@@ -1,0 +1,15 @@
+.slider-arrows {
+
+    max-width: clamp(280px, 11.438rem + 30.31vw, 765px);
+    display: flex;
+    gap: 22px;
+
+}
+
+.slider-arrows-arrow {
+    transition: all .2s ease-in;
+
+    &:hover {
+        transform: scaleY(1.2);
+    }
+}

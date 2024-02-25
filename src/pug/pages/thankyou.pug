@@ -1,0 +1,10 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = 'Благодарим за обращение! - Ледовы комплекс "ЛУЧ" ';
+
+block content
+    include ./../sections/thankyou/header.pug
+    main.main 
+        include ./../sections/thankyou/banner.pug
+    include ./../sections/footer.pug

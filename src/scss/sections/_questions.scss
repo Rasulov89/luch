@@ -1,0 +1,36 @@
+.questions {
+    padding-top: 152px;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: -64px;
+        right: -103px;
+        width: clamp(120px, 4.813rem + 13.44vw, 335px);
+        height: clamp(110px, 4.375rem + 12.5vw, 310px);
+        background-image: url('./../img/questions/decor-bottom.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        mix-blend-mode: multiply;
+    }
+}
+
+
+.questions__title {
+    margin-bottom: clamp(40px, 2.25rem + 1.25vw, 60px);
+
+    font-size: clamp(18px, 0.95rem + 0.88vw, 32px);
+    line-height: 1.2;
+    letter-spacing: 0.156em;
+    text-transform: uppercase;
+}
+
+.qustions__btn {
+
+}

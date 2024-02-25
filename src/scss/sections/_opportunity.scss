@@ -1,0 +1,130 @@
+.opportunity {
+    margin-top: calc(clamp(0rem, -2.375rem + 11.88vw, 190px) * -1);
+    min-height: clamp(721px, 36.95rem + 40.56vw, 1370px);
+    background-image: url('./../img/opportunity/opportunity-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        width: clamp(125px, 2.813rem + 25vw, 525px);
+        height: clamp(100px, 2.238rem + 20.06vw, 421px);
+        background-image: url('./../img/opportunity/decor-top.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: -1;
+        top: calc(clamp(0rem, -0.95rem + 4.75vw, 76px) - 35px);
+        right: clamp(22px, 0.012rem + 6.81vw, 131px);
+    }
+
+    &::after {
+        content: "";
+        width: clamp(160px, 2.675rem + 36.63vw, 746px);
+        height: clamp(148px, 2.475rem + 33.88vw, 690px);
+        background-image: url('./../img/opportunity/decor-bottom.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: 1;
+        bottom: calc(clamp(-73px, -5.037rem + 2.38vw, -35px) * -1);
+        // top: 646px;
+        left: calc(clamp(77px, 3.688rem + 5.63vw, 167px) * -1);
+    }
+}
+
+.opportunity__wrapper {
+    margin-bottom: 88px;
+    padding-top: clamp(97px, 2.988rem + 15.38vw, 343px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Mobile */
+    @include mobile {
+        display: block;
+    }
+
+}
+
+.opportunity__title {
+    align-self: center;
+
+    /* Mobile */
+    @include mobile {
+        margin-bottom: 27px;
+    }
+}
+
+.opportunity__connent {
+    display: grid;
+    grid-template-columns: repeat(2, clamp(134px, 6.45rem + 9.63vw, 288px));
+    grid-template-rows: repeat(2, clamp(136px, 6.575rem + 9.63vw, 290px));
+    gap: clamp(10px, 0.438rem + 0.94vw, 25px);
+
+    /* Mobile */
+    @include mobile {
+        grid-template-columns: repeat(2, minmax(134px, 1fr));
+
+    }
+
+}
+
+.opportunity__card {
+    padding: clamp(15px, 0.813rem + 0.63vw, 25px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+.opportunity__card-title {
+    font-size: clamp(18px, 0.95rem + 0.88vw, 32px);
+    line-height: 1.2;
+    letter-spacing: clamp(2px, 0.088rem + 0.19vw, 5px);
+    color: var(--ui-red);
+    text-transform: uppercase;
+
+}
+
+.opportunity__card-img {
+    margin-left: auto;
+    margin-top: auto;
+    width: clamp(55px, 2.625rem + 4.06vw, 120px);
+    height: clamp(55px, 2.625rem + 4.06vw, 120px);
+}
+
+.opportunity__reservation {
+    margin-top: calc(clamp(0rem, -1.188rem + 5.94vw, 95px)* -1);
+    padding-top: clamp(26px, 1.237rem + 1.94vw, 57px);
+    max-width: clamp(633px, 32.263rem + 36.5vw, 1217px);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./../img/opportunity/reservation-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    transform: translateY(37%);
+}
+
+.opportunity__reservation-title {
+    margin-bottom: clamp(10px, 0.5rem + 0.63vw, 20px);
+    font-size: clamp(18px, 0.95rem + 0.88vw, 32px);
+    letter-spacing: clamp(2px, 0.1rem + 0.13vw, 4px);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.opportunity__reservation-btn {
+    transform: translateY(30%);
+}

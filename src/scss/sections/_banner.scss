@@ -1,0 +1,54 @@
+.banner {
+    margin-top: calc(clamp(20px, 0.75rem + 2.5vw, 60px) * -1);
+    min-height: clamp(257px, 12.9rem + 15.81vw, 510px);
+    background: url('./../img/thankyou/thankyou-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    position: relative;
+    overflow-x: clip;
+
+    &::before {
+        content: "";
+        width: clamp(150px, 2.85rem + 32.63vw, 672px);
+        height: clamp(140px, 2.738rem + 30.06vw, 621px);
+        background-image: url('./../img/thankyou/decor-left.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        mix-blend-mode: multiply;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        content: "";
+        width: clamp(150px, 2.85rem + 32.63vw, 672px);
+        height: clamp(140px, 2.738rem + 30.06vw, 621px);
+        background-image: url('./../img/thankyou/decor-right.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        mix-blend-mode: multiply;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(50%, -50%);
+    }
+    /* Mobile XS */
+    @include mobile-xs {
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+}

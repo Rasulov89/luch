@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'Druk Cyr';
+	src: local('Druk Cyr Medium Italic'), local('Druk-Cyr-Medium-Italic'),
+		url('./../fonts/DrukCyr-MediumItalic.woff2') format('woff2'),
+		url('./../fonts/DrukCyr-MediumItalic.woff') format('woff'),
+		url('./../fonts/DrukCyr-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: local('Bebas Neue Bold'), local('Bebas-Neue-Bold'),
+		url('./../fonts/BebasNeueBold.woff2') format('woff2'),
+		url('./../fonts/BebasNeueBold.woff') format('woff'),
+		url('./../fonts/BebasNeueBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IBM Plex Sans';
+	src: local('IBM Plex Sans Regular'), local('IBM-Plex-Sans-Regular'),
+		url('./../fonts/IBMPlexSans.woff2') format('woff2'),
+		url('./../fonts/IBMPlexSans.woff') format('woff'),
+		url('./../fonts/IBMPlexSans.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@function remy($pxsize) {
+	@return calc(($pxsize/16))+rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-family);
+	font-style: italic;
+	font-weight: 500;
+}

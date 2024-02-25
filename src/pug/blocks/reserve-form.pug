@@ -1,0 +1,20 @@
+.reserve-form
+    button.form__close-btn.reserve-form__close-btn
+        img(src="./img/close.svg", alt="связаться с нами")
+    form.form(action="#")
+        .form__title 
+            h3 бронирование льда
+        .form__inputs
+            .form__row 
+                .form__item 
+                    input.form__input(type="text" placeholder="Имя")
+                .form__item 
+                    input.form__input(type="tel" placeholder="Телефон")
+            .form__item 
+                input.form__input(type="datetime-local" value="Дата и время")
+            .form__item 
+                input.form__input(type="text" placeholder="Комментарий")
+        .form__privacy 
+            p Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.
+        .form__btn 
+            button(type="submit").btn.btn--blue Отправить

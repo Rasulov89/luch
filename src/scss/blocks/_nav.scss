@@ -1,0 +1,27 @@
+.nav {
+    max-width: clamp(280px, 5.85rem + 58.25vw, 1212px);
+    width: 100%;
+
+    margin-bottom: clamp(60px, 3.05rem + 3.5vw, 116px);
+}
+
+.nav__item {
+    width: 100%;
+
+    text-align: center;
+    color: #fff;
+    font-size: clamp(42px, 1.95rem + 3.38vw, 96px);
+    letter-spacing: clamp(4px, 0.2rem + 0.25vw, 8px);
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    /*     &:not(:last-child) {
+        padding-bottom: clamp(10px, 0.275rem + 1.75vw, 38px);
+    } */
+
+}
+
+.nav__item+.nav__item {
+    // padding-top: clamp(10px, 0.275rem + 1.75vw, 38px);
+    border-top: 1px solid #000;
+}
