@@ -116,7 +116,7 @@
     margin-left: auto;
     margin-right: var(--container-padding);
     position: relative;
-    z-index: 1;
+    z-index: 3;
 
     /* Mobile */
     @include mobile {

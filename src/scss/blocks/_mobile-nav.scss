@@ -10,7 +10,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: clamp(164px, 7.438rem + 14.06vw, 389px) 15px 82px;
+	padding: clamp(164px, 8.3rem + 9.75vw, 320px) 15px clamp(64px, 3.775rem + 1.13vw, 82px);
 	// background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
 	background: var(--ui-blue);
 	transition: all 0.2s ease-in;
